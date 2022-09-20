@@ -8,9 +8,10 @@ function setup() {
 function draw() {
   background("blue");
   fill("pink")
- rect(x, 100, 100, 100);
+  textSize(120);
+ text("Hi Fam!", x, 200);
  x = x + 5;
  if (x > width){
-  x = 0;
+  x = -500;
  }
 }
