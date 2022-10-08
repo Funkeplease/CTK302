@@ -14,14 +14,14 @@ function setup() {
 function draw() {
 
   background("yellow");
-  
+  text("Songs chosen are; All that, Creative and Hey. They are all from the recommended site.", 200, 400)
   switch (state) {
     case -1:
       text("Please click to start", 100, 100); 
 
       break
 
-case 0:
+     case 0:
       text("Hey Funke", 100, 100);
       if(!s1.isPlaying()){
         s1.play() ;
