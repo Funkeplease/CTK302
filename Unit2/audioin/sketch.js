@@ -1,16 +1,18 @@
 let mic;
 let vol = 0;
+let i1;
 
 function setup() {
   createCanvas(400, 400);
-
+  i1 = loadImage ("assets/happy.jpg");
   // code for initializing mic in.
   mic = new p5.AudioIn(); // what does "new" mean?
   mic.start();
 }
 
 function draw() {
-  background("purple");
+  background("#1F85DE");
+  image(i1, width / 2, height / 2 + 120, 100, 100);
 
   // get the sound input
   vol = mic.getLevel(); // returned level is between 0 and 1
