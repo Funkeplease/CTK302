@@ -21,7 +21,7 @@ function draw() {
       break ;
       
       case 1: 
-       text("Hi, this is me,", 5, 22) ; 
+       text("Hi, this is me,", 5, 22) ;
       // put a picture here
       image(i1, width / 2, height / 2 - 120, 100, 100);
       break ;
