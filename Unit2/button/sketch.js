@@ -10,16 +10,16 @@ function draw() {
   switch (state) {
     case 0:
       background("pink");
-      text("why did the chx", width / 2, height / 2);
+      text("What do you call a fish with no eyes?", width / 2, height / 2);
       break;
 
     case 1:
-      background("blue");
-      text("because", width / 2, height / 2);
+      background("#62B371");
+      text("A fsh", width / 2, height / 2);
       break;
   }
 
-  rect(width/2, height - 2, 150, 50);
+  rect(width/2, height - 100, 150, 50);
 }
 
 function mouseReleased() {

@@ -13,7 +13,7 @@ switch(state){
     break;
 
     case 1:
-    background("blue");
+    background("#62B371");
     text("They ketchup.", width/2, height/2)
     break;
 }
