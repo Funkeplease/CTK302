@@ -56,7 +56,9 @@ function draw() {
   }
   // rectangle
   fill ("purple")
-  rect(x, height-75, 100, 50);
+  rect(x, height-50, 100, 50);
+  ellipse(x+10, height-30, 30,30);
+  ellipse(x-30, height-30, 30,30);
   x = x+v;
   if (x> width) {
     x =0;
