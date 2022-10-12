@@ -38,8 +38,8 @@ function draw() {
       //put font and text
       
       fill("black");
-      textFont(f1, 48) ;
-      text("I am a girl", 120, 120);
+      textFont(f2, 25) ;
+      text("Hey, are you good?", 120, 120);
       timer++ ;
       if (timer > 3*60){
         timer = 0;
@@ -52,8 +52,8 @@ function draw() {
         //put font and text
         
         fill("black");
-        textFont(f1, 48) ;
-        text("I am happy", 120, 120);
+        textFont(f3, 25) ;
+        text("Stay Positve", 120, 120);
       timer++ ;
       if (timer > 7*60){
         timer = 0;
@@ -66,12 +66,12 @@ function draw() {
         //put font and text
         
         fill("black");
-        textFont(f1, 48) ;
-        text("and I love plants", 120, 120);
+        textFont(f4, 25) ;
+        text("Take deep breaths", 120, 120);
       timer++ ;
       if (timer > 11*60){
         timer = 0;
-        state = 0;
+        state = 3;
       }
       break;
 
@@ -80,24 +80,24 @@ function draw() {
         //put image, font and text
         image(i1, width/2,height/2, 100, 100);
         fill("black");
-        textFont(f1, 48) ;
-        text("and I love plants", 120, 120);
+        textFont(f5, 25) ;
+        text("Help is coming", 120, 120);
       timer++ ;
       if (timer > 15*60){
         timer = 0;
-        state = 0;
+        state = 4;
 
         case 5:
           background("#25DE1F");
             //put , font and text
   
             fill("black");
-            textFont(f1, 48) ;
-            text("and I love plants", 120, 120);
+            textFont(f1, 25) ;
+            text("You are doing great, you'll be out of there soon.", 120, 120);
           timer++ ;
           if (timer > 18*60){
             timer = 0;
-            state = 0;
+            state = 5;
       }
       break;
   }
