@@ -4,10 +4,10 @@ let state = 0;
 let timer = 0;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(800, 800);
   i1 = loadImage("assets/alarm.png")
   imageMode(CENTER);
-  f1 = loadFont("assets/handwritten.otf");
+  f1 = loadFont("assets/regular.ttf");
   f2 = loadFont("assets/band.ttf");
   f3 = loadFont("assets/easter.ttf");
   f4 = loadFont("assets/hangedletters.ttf");
@@ -25,7 +25,7 @@ function draw() {
         
         fill("black");
         textFont(f1, 25) ;
-        text("Most Domestic violence cases are not reported and this leads to a spiral of ills. This state machine which is an alarm that goes off after a minute of consistent yealling is designed to enable reporting. Keep yelling for a minute and let's see what happens", 120, 120);
+        text("Most Domestic violence cases are not reported and this leads to a spiral of ills. This state machine which is an alarm that goes off after a minute of consistent yealling is designed to enable reporting. Keep yelling for a minute and let's see what happens", 120, 120, 120, 120);
       timer++ ;
       if (timer > 5*60){
         timer = 0;
@@ -86,6 +86,8 @@ function draw() {
       if (timer > 15*60){
         timer = 0;
         state = 4;
+      }
+      break;
 
         case 5:
           background("#25DE1F");
