@@ -7,6 +7,7 @@ function setup() {
   i1 = loadImage("assets/blackgirl.jpeg")
   i2 = loadImage("assets/happy.jpg")
   i3 = loadImage("assets/plant.jpeg")
+  imageMode(CENTER);
 }
 
 function draw() {
@@ -17,8 +18,8 @@ function draw() {
       background("yellow");
    
       //put image and text
-      image(i1, width/2 - 120, 100, 100);
-      text("I am a girl," 120, 120);
+      image(i1, width/2, height/2, 100, 100);
+      text("I am a girl", 120, 120);
       timer++ ;
       if (timer > 3*60){
         timer = 0;
@@ -29,8 +30,8 @@ function draw() {
        case 1:
       background("brown");
         //put image and text
-        image(i2, width/2, 100, 100);
-        text("I am happy," 120, 120);
+        image(i2, width/2, height/2,100, 100);
+        text("I am happy", 120, 120);
       timer++ ;
       if (timer > 7*60){
         timer = 0;
@@ -41,8 +42,8 @@ function draw() {
        case 2:
       background("pink");
         //put image and text
-        image(i3, width/2 + 120, 100, 100);
-        text("and I love plants" 120, 120);
+        image(i3, width/2,height/2, 100, 100);
+        text("and I love plants", 120, 120);
       timer++ ;
       if (timer > 5*60){
         timer = 0;
