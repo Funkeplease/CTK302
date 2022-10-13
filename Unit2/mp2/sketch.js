@@ -40,7 +40,7 @@ function draw() {
         
         fill("black");
         textFont(f1, 20) ;
-        text("Most Domestic violence cases are not reported and this leads to a spiral of ills. This state machine which is an alarm that goes off after a minute of consistent yealling is designed to enable reporting. Keep yelling for a minute and let's see what happens", width/2, height/2,400, 200);
+        text("Most Domestic violence cases are not reported and this leads to a spiral of ills. This state machine which is an alarm that goes off after a minute of consistent yelling is designed to enable reporting. Keep yelling for a minute and let's see what happens", width/2, height/2,400, 200);
       timer++ ;
       if (timer > 8*60){
         timer = 0;
