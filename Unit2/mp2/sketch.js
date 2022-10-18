@@ -31,7 +31,8 @@ function setup() {
 function draw() {
   background(220);
   vol = mic.getLevel().toFixed(1);
-  aprVol += (vol - aprVol) * ease;
+ // aprVol += (vol - aprVol) * ease;
+  aprVol = vol ;
   yell = map(aprVol, 0, 1, 0 , 10)
   switch(state){
     case 0:
