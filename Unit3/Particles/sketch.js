@@ -32,14 +32,15 @@ class Car {
     this.g = random(255);
     this.b = random(255);
     this.a = random(200, 255);
-    this.s = random(5, 20)
+    //this.s = random(5, 20)
   }
 
   // methods
 
   display() {
     fill(this.r, this.g, this.b, this.a);
-    text("love you, funke", this.pos.x, this.pos.y, this.s);
+    textSize(17)
+    text("Love you, Funke", this.pos.x, this.pos.y, this.s);
   }
 
   move() {
