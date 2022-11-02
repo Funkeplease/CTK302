@@ -6,7 +6,7 @@ let s1;
 let f1,f2,f3,f4,f5;
 
 function preload(){
-  s1 = loadSound("assets.warning.wav");
+  s1 = loadSound("assets/warning.wav");
 }
 function setup() {
   createCanvas(400, 400);
@@ -31,8 +31,8 @@ function draw() {
     case 0:
       // text on the screen for debugging
       fill("white");
-      textSize(18);
-      text("Click to start", width / 2, height / 2);
+      textSize(15);
+      text("Click to start \n  Most Domestic violence cases are not reported \n and this leads to a spiral of ills. \n This state machine which is an alarm, \n  goes off after a minute of consistent yelling. \n It is designed to enable reporting. \n  Keep yelling for a minute and let's see what happens.",width / 2, height / 2);
       break;
 
     case 1:
@@ -92,11 +92,14 @@ function draw() {
           fill("#5D3FD3");
           arc(width / 2, height / 2, 300, 300, -90, int(total) * 2 - 90, PIE);
           fill("white");
-          textFont(f3, 20);
+          textFont(f5, 20);
           text("Take deep breaths", width / 2, height / 2);
-          timer++;
+          //state++;
           if (!s1.isPlaying()){
             s1.play();
+          }
+          if (secs > 59){
+            state = 2;
           }
           break;
       }
