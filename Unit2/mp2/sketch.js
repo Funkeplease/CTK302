@@ -94,7 +94,7 @@ function draw() {
 
         case 3: // 46-59 seconds
           background ("#1FDED8");
-          image(i1, width/2,height/2 + 150, 100, 100);
+          image(i1, width/2,height/2 + 190, 100, 100);
           fill("white");
           arc(width / 2, height / 2, 300, 300, -90, int(total) * 2 - 90, PIE);
           fill("black");
