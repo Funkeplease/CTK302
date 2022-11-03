@@ -1,8 +1,9 @@
 let cars = [];
+let i1;
 
 function setup() {
   createCanvas(500, 500);
-
+i1 = loadImage("assets/funke.JPG");
   // Spawn one object
   // for (let i = 0; i < 20; i++) {
   //   cars.push(new Car());
@@ -11,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  background("pink");
+  background(i1);
   cars.push(new Car());
 
   for (let i = 0; i < cars.length; i++) {
