@@ -1,5 +1,5 @@
 // Note - use your own APPID to get this to work!
-let i1;
+
 let weather;
 let weatherID = 0; // returned in the JSON weather element
 let state = 0;
@@ -7,9 +7,11 @@ let x = 0;
 let windspeed = 0;
 let temperature = 0;
 let humidity = 0;
+let i1;
 
 function setup() {
   createCanvas(400, 400);
+  i1 = loadImage("assets/map.png") 
 
   // HERE is the call to get the weather. We build the string first.
 
@@ -65,9 +67,9 @@ function draw() {
       text("humidity is " + humidity + "%", 20, 80);
 
       // cloud
-      fill("white");
+      
       noStroke();
-      ellipse(x, 300, 200, 100);
+      image(i1, x, 300, 200, 100);
 
       // move the cloud's x position
       x = x + windspeed / 3;

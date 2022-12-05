@@ -1,7 +1,11 @@
 var bubbles = [];
 let url = "";
 let f1;
+let s1;
 
+function preload(){
+  s1 = loadSound("assets/friend.mp3");
+}
 function setup() {
   // let key = "1xG5lzBtJV3gK61ZE_qdku3ms9-pCJqwl0T8RVHI11m0"; // this is KEY of the URL from the sheet
   
@@ -42,6 +46,9 @@ function draw() {
   for (let i = 0; i < bubbles.length; i++) {
     bubbles[i].display();
   }
+  if(!s1.isPlaying()){
+    s1.play();
+  }
 }
 
 // my Bubble class
@@ -57,8 +64,8 @@ class Bubble {
   }
 
   display() {
-    stroke("white");
-    noFill();
+    stroke("black");
+    fill("white");
     ellipse(this.pos.x, this.pos.y+10, 120, 120);
     fill("black");
     text(
