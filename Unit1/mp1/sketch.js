@@ -15,7 +15,7 @@ function draw() {
   background(bg);
   fill(218, 69, 255);
   textSize(10);
-  text("Meet Omowunmi. Omowunmi is a visual representation of a pregnant woman and the mood swings she experiences during pregnancy.", width/2 -100,40, 250);
+  text("According to World Health Organization, Worldwide about 10% of pregnant women and 13% of women who have just given birth experience a mental disorder, primarily depression. Meet Omowunmi. Omowunmi is a visual representation of a pregnant woman and the mood swings she experiences during pregnancy.", width/2 -250,40, 250);
   fill(168, 96, 50)
   rect(width/2-20, height/2-80, 80,110);
   // This is the hands
